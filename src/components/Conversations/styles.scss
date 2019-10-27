@@ -1,0 +1,26 @@
+.container-conversations {
+    margin: 5em;
+    text-align: center;
+    p {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    .table {
+        th:nth-child(1) {  
+            width: 10%;
+        }
+        th:nth-child(2) {  
+            width: 50%;
+        }
+        th:nth-child(3) {  
+            width: 40%;
+        }
+        button {
+            margin-right: 10px;
+        }
+    }
+    .create-con-item {
+        display: inline-block;
+        padding: 1em;
+    }
+}

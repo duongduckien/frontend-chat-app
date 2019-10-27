@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "jsx": "react",
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "outDir": "./build/",
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "target": "es6",
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "moduleResolution": "node",
+        "declaration": false,
+        "noLib": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "typeRoots": [ "node_modules/@types", "./typings.d.ts" ]
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

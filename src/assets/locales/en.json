@@ -1,0 +1,15 @@
+{
+    "TITLE": "Chat Application",
+    "SUBMIT": "Submit",
+    "ENTER_NAME_PLACEHOLDER": "Enter username",
+    "CONVERSATIONS_TITLE": "List conversations",
+    "NO": "No",
+    "NAME": "Name",
+    "ACTIONS": "Actions",
+    "GO": "Go",
+    "REMOVE": "Remove",
+    "CREATE": "Create",
+    "CREATE_CONVERSATION_PLACEHOLDER": "Enter conversation name",
+    "SEND": "SEND",
+    "ENTER_MSG": "Enter message"
+}

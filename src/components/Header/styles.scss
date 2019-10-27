@@ -1,0 +1,14 @@
+header {
+    min-height: 4rem;
+    background-color: #004e86;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    h3 {
+        margin: 0;
+        color: #fff;
+        line-height: 4rem;
+        padding-left: 1rem;
+    }
+}

@@ -1,0 +1,88 @@
+.container-con-detail {
+    margin: 5em;
+    text-align: center;
+    p.page-title {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    .table-detail {
+        width: 60%;
+        border: 2px solid #afafaf;
+        border-radius: 5px;
+        .title {
+            height: 3em;
+            line-height: 3em;
+            background-color: #ddd;
+            border-bottom: 2px solid #afafaf;
+            p {
+                font-weight: bold;
+            }
+        }
+        .list-users {
+            height: 30em;
+            overflow: auto;
+        }
+        .col-users {
+            border-right: 2px solid #afafaf;
+            ul {
+                list-style-type: none;
+                padding: 0;
+                text-align: left;
+                li {
+                    img {
+                        width: 2em;
+                        margin: 0.5em;
+                    }
+                    span {
+                        font-size: 0.9em;
+                    }
+                }
+                li:hover {
+                    background-color: #bddfff;
+                    cursor: pointer;
+                }
+            }
+        }
+        .col-msg {
+            height: 30em;
+            position: relative;
+            .chat-input {
+                position: absolute;
+                bottom: 0;
+                height: 4em;
+                width: 100%;
+                border-top: 2px solid #afafaf;
+                .chat-input-items {
+                    display: inline-block;
+                    height: 4em;
+                    position: absolute;
+                }
+                .left {
+                    left: 0;
+                    width: 80%;
+                    text-align: left;
+                    input {
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        height: 2.6em;
+                        width: 95%;
+                        margin: 0.7em 0em 0em 0.7em;
+                        padding: 0.6em;
+                    }
+                    input:focus {
+                        outline: none;
+                    }
+                }
+                .right {
+                    right: 0;
+                    width: 20%;
+                    text-align: right;
+                    button {
+                        height: 2.6em;
+                        margin: 0.7em 0.7em 0em 0em;
+                    }
+                }
+            }
+        }
+    }
+}
