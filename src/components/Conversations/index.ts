@@ -1,6 +1,7 @@
-import { Conversations } from './Conversations';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { withRouter } from 'react-router-dom';
+import { Conversations } from './Conversations';
 import * as conversationsActions from '../../actions/conversations.action';
 
 const mapStateToProps = (state: any) => {
@@ -15,4 +16,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Conversations);
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Conversations));

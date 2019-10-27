@@ -7,14 +7,18 @@ import './styles.scss';
 // Components
 import Messages from '../common/Messages';
 
-export class ConversationDetail extends React.Component<{}, {}> {
+interface IProps {
+    history: any;
+}
+
+export class ConversationDetail extends React.Component<IProps, {}> {
 
     constructor(props: any) {
         super(props);
     }
 
-    leaveRoom() {
-        return <Redirect to='/conversations' />;
+    leaveConversation() {
+        this.props.history.push('/conversations');
     }
 
     render() {
@@ -76,8 +80,8 @@ export class ConversationDetail extends React.Component<{}, {}> {
                     <button
                         type="button"
                         className="btn btn-danger"
-                        onClick={() => this.leaveRoom()}
-                    >{i18n.t('LEAVE_ROOM')}</button>
+                        onClick={() => this.leaveConversation()}
+                    >{i18n.t('LEAVE_CONVERSATION')}</button>
                 </div>
             </div>
         );

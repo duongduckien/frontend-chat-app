@@ -13,7 +13,7 @@
     "SEND": "SEND",
     "ENTER_MSG": "Enter message",
     "CONVERSATION_DETAIL": "Conversation Detail",
-    "LEAVE_ROOM": "Leave room",
+    "LEAVE_CONVERSATION": "Leave conversation",
     "USERS": "Users",
     "MESSAGES": "Messages"
 }
