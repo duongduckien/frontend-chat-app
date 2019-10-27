@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Redirect } from 'react-router-dom';
 import { Col, Image } from 'react-bootstrap';
 import i18n from '../../utilities/i18n';
 import './styles.scss';
@@ -10,6 +11,10 @@ export class ConversationDetail extends React.Component<{}, {}> {
 
     constructor(props: any) {
         super(props);
+    }
+
+    leaveRoom() {
+        return <Redirect to='/conversations' />;
     }
 
     render() {
@@ -71,6 +76,7 @@ export class ConversationDetail extends React.Component<{}, {}> {
                     <button
                         type="button"
                         className="btn btn-danger"
+                        onClick={() => this.leaveRoom()}
                     >{i18n.t('LEAVE_ROOM')}</button>
                 </div>
             </div>

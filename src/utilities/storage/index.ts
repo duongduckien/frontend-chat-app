@@ -13,6 +13,10 @@ class Storage {
         return localStorage.getItem(key);
     }
 
+    clear() {
+        return localStorage.clear();
+    }
+
 }
 
 const storage = new Storage();
