@@ -1,5 +1,5 @@
 
-export class Helper {
+class Helper {
 
     listYears() {
         const arrYears = [];
@@ -81,3 +81,6 @@ export class Helper {
     }
 
 }
+
+const helper = new Helper();
+export default helper;

@@ -1,8 +1,6 @@
-import { Middleware } from '../utilities/middleware';
+import httpRequest from '../utilities/middleware';
 
-const httpRequest = new Middleware();
-
-export class API {
+class API {
 
     getCargoTypes() {
         return httpRequest.axiosInstance.get('/cargoTypes');
@@ -25,3 +23,6 @@ export class API {
     }
 
 }
+
+const api = new API();
+export default api;

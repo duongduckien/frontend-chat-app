@@ -3,13 +3,10 @@ import * as types from '../actions/types';
 import * as conversationsActions from '../actions/conversations.action';
 
 // Utilities
-import { Helper } from '../utilities/helper';
+import Helper from '../utilities/helper';
 
 // Services
-import { API } from '../services/api';
-
-const api = new API();
-const helper = new Helper();
+import API from '../services/api';
 
 export function* getConversations() {
 

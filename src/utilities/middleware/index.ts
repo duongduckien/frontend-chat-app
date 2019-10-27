@@ -4,7 +4,7 @@ import promise from 'promise';
 // Config
 import * as configData from '../../assets/data/config.json';
 
-export class Middleware {
+class Middleware {
 
     public axiosInstance: any;
 
@@ -34,3 +34,6 @@ export class Middleware {
     }
 
 }
+
+const middleware = new Middleware();
+export default middleware;

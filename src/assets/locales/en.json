@@ -11,5 +11,9 @@
     "CREATE": "Create",
     "CREATE_CONVERSATION_PLACEHOLDER": "Enter conversation name",
     "SEND": "SEND",
-    "ENTER_MSG": "Enter message"
+    "ENTER_MSG": "Enter message",
+    "CONVERSATION_DETAIL": "Conversation Detail",
+    "LEAVE_ROOM": "Leave room",
+    "USERS": "Users",
+    "MESSAGES": "Messages"
 }

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Table, Col, Image } from 'react-bootstrap';
+import { Col, Image } from 'react-bootstrap';
 import i18n from '../../utilities/i18n';
 import './styles.scss';
 
@@ -15,16 +15,16 @@ export class ConversationDetail extends React.Component<{}, {}> {
     render() {
         return (
             <div className="container-con-detail">
-                <p className="page-title">Conversation Detail</p>
+                <p className="page-title">{i18n.t('CONVERSATION_DETAIL')}</p>
 
                 <div className="container-fluid table-detail">
                     <div className="row">
                         <Col md={4} className="nopadding title col-users">
-                            <p>Users</p>
+                            <p>{i18n.t('USERS')}</p>
                         </Col>
 
                         <Col md={8} className="nopadding title">
-                            <p>Messages</p>
+                            <p>{i18n.t('MESSAGES')}</p>
                         </Col>
 
                         <Col md={4} className="nopadding col-users list-users">
@@ -65,6 +65,13 @@ export class ConversationDetail extends React.Component<{}, {}> {
                             </div>
                         </Col>
                     </div>
+                </div>
+
+                <div className="btn-leave">
+                    <button
+                        type="button"
+                        className="btn btn-danger"
+                    >{i18n.t('LEAVE_ROOM')}</button>
                 </div>
             </div>
         );
