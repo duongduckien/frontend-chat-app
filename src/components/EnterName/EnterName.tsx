@@ -5,12 +5,18 @@ import './styles.scss';
 // Components
 import InputText from '../common/InputText';
 
+interface IProps {
+    actions: {
+        users: any;
+    };
+}
+
 interface IState {
     username: string;
     disableSubmit: boolean;
 }
 
-export class EnterName extends React.Component<{}, IState> {
+export class EnterName extends React.Component<IProps, IState> {
 
     state = {
         username: '',
@@ -22,7 +28,12 @@ export class EnterName extends React.Component<{}, IState> {
     }
 
     submit() {
-        console.log('Submit');
+        if (this.state.username.trim() !== '') {
+            const data = {
+                name: this.state.username,
+            };
+            this.props.actions.users.submitUsername(data);
+        }
     }
 
     setUsername(value: string) {

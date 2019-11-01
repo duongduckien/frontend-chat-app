@@ -15,8 +15,7 @@ import PrivateRoute from './private.route';
 const Router: React.FC<{}> = () => {
 
     const isAuthenticated = (): boolean => {
-        // return Storage.getItem('currentuser') ? true : false;
-        return true;
+        return Storage.getItem('userinfo') ? true : false;
     };
 
     return (

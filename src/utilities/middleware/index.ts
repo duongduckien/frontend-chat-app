@@ -24,13 +24,11 @@ class Middleware {
     }
 
     instanceAxios() {
-
         this.axiosInstance.interceptors.request.use(async (config: any) => {
             return config;
         }, (err: any) => {
             return promise.reject(err);
         });
-
     }
 
 }
